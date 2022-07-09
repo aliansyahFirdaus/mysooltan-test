@@ -6,7 +6,7 @@ import Card from "../UI/Card/Card";
 
 export default function Profile({ profile }) {
   return (
-    <Container className="my-4">
+    <Container>
       <Card>
         <Stack className={styles.profile}>
           <Stack gap={4}>
