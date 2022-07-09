@@ -1,3 +1,21 @@
+#Helo, My name Aliansyah Firdaus
+
+This is my result of assesment
+
+Link Deployed: https://mysooltan-test.web.app/ (MOBILE FIRST)
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
