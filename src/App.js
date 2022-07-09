@@ -1,10 +1,20 @@
-import './App.css';
+import { Container, Stack } from "react-bootstrap";
+
+import Home from "./pages/Home";
+import Profile from "./components/Profile/Profile";
+import Repository from "./components/Repository/Repository";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+    <Container className="my-3">
+      <Stack gap={3}>
+        <Home />
+        <Profile />
+        <Repository />
+      </Stack>
+    </Container>
   );
 }
 
