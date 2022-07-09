@@ -4,23 +4,27 @@ import React from "react";
 import styles from "./RepositoryItem.module.css";
 import BadgeStatRepo from "../UI/BadgeStatRepo/BadgeStatRepo";
 
-export default function RepositoryItem({visibility}) {
+export default function RepositoryItem({ detail }) {
+  const visibility = (txt) => txt.replace(txt[0], txt[0].toUpperCase());
+
   return (
     <Row className={styles.item}>
       <Stack gap={3}>
         <Stack direction="horizontal" className={styles.top}>
-          <a href="#">100DayOfCode-cart-redux</a>
-          <Badge pill className={styles[visibility]}>Public</Badge>
+          <a href={detail.html_url} target="_blank">{detail.name}</a>
+          <Badge pill className={styles[detail.visibility]}>
+            {visibility(detail.visibility)}
+          </Badge>
         </Stack>
 
         <Stack direction="horizontal" className={styles.bottom} gap={2}>
           <div className={styles.language}>
             <div className={styles.icon} />
-            Javascript
+            {detail.language || "Unknown"}
           </div>
 
-          <BadgeStatRepo name="Fork" icon="code-fork" count={2} />
-          <BadgeStatRepo name="Watcher" icon="eye" count={20} />
+          <BadgeStatRepo name="Forks" icon="code-fork" count={detail.forks} />
+          <BadgeStatRepo name="Watcher" icon="eye" count={detail.watchers} />
         </Stack>
       </Stack>
     </Row>
