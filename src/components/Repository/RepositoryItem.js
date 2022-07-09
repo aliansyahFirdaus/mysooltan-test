@@ -2,6 +2,7 @@ import { Badge, Row, Stack } from "react-bootstrap";
 
 import React from "react";
 import styles from "./RepositoryItem.module.css";
+import BadgeStatRepo from "../UI/BadgeStatRepo/BadgeStatRepo";
 
 export default function RepositoryItem({visibility}) {
   return (
@@ -17,22 +18,9 @@ export default function RepositoryItem({visibility}) {
             <div className={styles.icon} />
             Javascript
           </div>
-          <Stack direction="horizontal" className={styles.detail} gap={2}>
-            <Stack direction="horizontal" gap={2}>
-              <i className="fa-solid fa-code-fork" />
-              <div className={styles.lines} />
-              <p>Fork</p>
-            </Stack>
-            <Badge pill>2</Badge>
-          </Stack>
-          <Stack direction="horizontal" className={styles.detail} gap={2}>
-            <Stack direction="horizontal" gap={2}>
-              <i className="fa-solid fa-eye" />
-              <div className={styles.lines} />
-              <p>Wathcer</p>
-            </Stack>
-            <Badge pill>0</Badge>
-          </Stack>
+
+          <BadgeStatRepo name="Fork" icon="code-fork" count={2} />
+          <BadgeStatRepo name="Watcher" icon="eye" count={20} />
         </Stack>
       </Stack>
     </Row>
