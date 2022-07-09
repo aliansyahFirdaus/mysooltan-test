@@ -1,16 +1,21 @@
 import { Container, Form, InputGroup, Stack } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { fetchUser } from "../../store/user-action";
 
 import React, { useState } from "react";
 import styles from "./Search.module.css";
 
 export default function Search() {
   const [keyword, setKeyword] = useState("");
+  const dispatch = useDispatch();
 
   const typingHandler = (e) => setKeyword(e.target.value);
+
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(keyword);
-    setKeyword("")
+    if (!keyword.trim()) return;
+    dispatch(fetchUser(keyword));
+    setKeyword("");
   };
 
   return (

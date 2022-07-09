@@ -3,14 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const userSlice = createSlice({
   name: "user-slice",
   initialState: {
-    user: {
-      username: "aliansyahFirdaus",
-      bio: "Frontend Engineer | From Reducer",
-      followers: 20,
-      following: 32,
-      repos: [],
-      link: "https://facebook.com",
-    },
+    user: {},
   },
   reducers: {
     getUser(state, action) {

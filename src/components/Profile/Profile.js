@@ -9,13 +9,15 @@ import StatProfile from "./StatProfile";
 export default function Profile() {
   const { user } = useSelector((state) => state.userDetail);
 
+  console.log(user)
+
   return (
     <Container>
       <Card>
         <Stack className={styles.profile}>
           <Stack gap={4}>
             <div className={styles["profile-picture"]}>
-              <img src="https://dummyimage.com/400x400/000/fff" />
+              <img src={user.avatar_url} />
             </div>
             <Stack className={styles.username}>
               <h3>{user.username}</h3>
@@ -25,9 +27,9 @@ export default function Profile() {
           <Stack direction="horizontal" gap={3}>
             <StatProfile text="Followers" count={user.followers} />
             <StatProfile text="Following" count={user.following} />
-            <StatProfile text="Repos" count={user.repos.length} />
+            <StatProfile text="Repos" count={0} />
           </Stack>
-          <a href={user.link}>
+          <a href={user.html_url} target="_blank">
             <Button className={styles["view-profile"]}>
               View Github Profile
               <i className="fa-solid fa-arrow-up-right-from-square ms-2" />
