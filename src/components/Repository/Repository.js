@@ -1,12 +1,17 @@
+import { Badge, Container, Row, Stack } from "react-bootstrap";
+
 import React from "react";
-import { Container } from "react-bootstrap";
 import Card from "../UI/Card/Card";
+import RepositoryItem from "./RepositoryItem";
 
 export default function Repository() {
   return (
     <Container>
       <Card>
-        <h1>Test</h1>
+        <RepositoryItem visibility="public" />
+        <RepositoryItem visibility="public" />
+        <RepositoryItem visibility="private" />
+        <RepositoryItem visibility="public" />
       </Card>
     </Container>
   );
