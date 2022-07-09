@@ -12,6 +12,10 @@ export const fetchUser = (username) => {
         dispatch(userAction.getUser(data));
         dispatch(statusAction.updateStatus({ status: "success", msg: "Done" }));
       })
-      .catch((err) => console.log(err));
+      .catch((err) =>
+        dispatch(
+          statusAction.updateStatus({ status: "error", msg: err.message })
+        )
+      );
   };
 };
