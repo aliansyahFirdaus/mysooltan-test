@@ -1,21 +1,9 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 
-const initialState = {
-  owner: {username: "aliansyahFirdaus"},
-};
-
-const ownerSlice = createSlice({
-  name: "owner",
-  initialState,
-  reducers: {
-    fetchOwner(state, action) {
-      state.owner = action.payload;
-    },
-  },
-});
+import userReducer from "./user-slice";
 
 const store = configureStore({
-  reducer: { owners: ownerSlice.reducer },
+  reducer: { userDetail: userReducer },
 });
 
-export default store
+export default store;
