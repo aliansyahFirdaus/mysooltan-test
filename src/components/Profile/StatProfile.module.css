@@ -1,0 +1,15 @@
+.badge {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(194, 194, 194, 0.349);
+  color: rgb(97, 97, 97);
+}
+
+.badge p {
+  margin: 5px;
+}
+
+.badge span {
+  font-size: 20px;
+  font-weight: 800;
+}

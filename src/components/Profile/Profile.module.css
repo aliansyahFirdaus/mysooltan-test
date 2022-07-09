@@ -30,22 +30,6 @@
   margin: 0;
 }
 
-.profile .badge {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid rgba(194, 194, 194, 0.349);
-  color: rgb(97, 97, 97);
-}
-
-.profile .badge p {
-  margin: 5px;
-}
-
-.profile .badge span {
-  font-size: 20px;
-  font-weight: 800;
-}
-
 .profile .view-profile {
   border-radius: 30px;
   width: 80%;

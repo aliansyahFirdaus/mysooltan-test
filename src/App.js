@@ -1,6 +1,6 @@
 import { Container, Stack } from "react-bootstrap";
 
-import Home from "./pages/Home";
+import Search from "./components/Search/Search";
 import Profile from "./components/Profile/Profile";
 import Repository from "./components/Repository/Repository";
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <Container className="my-3">
       <Stack gap={3}>
-        <Home />
+        <Search />
         <Profile />
         <Repository />
       </Stack>
