@@ -2,7 +2,7 @@
   padding: 0 !important;
 }
 
-.search .hstack{
+.search .hstack {
   width: 100% !important;
 }
 
@@ -16,6 +16,7 @@
   align-items: center !important;
   padding: 0 10px;
   width: 100%;
+  background-color: white;
 }
 
 .input input {
@@ -23,5 +24,5 @@
 }
 
 .input .icon {
-    color: rgb(194, 194, 194);
+  color: rgb(194, 194, 194);
 }
