@@ -1,10 +1,14 @@
+import { Container } from 'react-bootstrap';
+
+import Home from './pages/Home';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+    <Container className='my-3'>
+      <Home />
+    </Container>
   );
 }
 
