@@ -25,7 +25,7 @@ export default function Profile({ profile }) {
             <StatProfile text="Repos" count={20} />
           </Stack>
           <Button className={styles["view-profile"]}>
-            View Github Profile
+          View Github Profile <i className="fa-solid fa-arrow-up-right-from-square ms-2" />
           </Button>
         </Stack>
       </Card>
