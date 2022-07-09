@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.form-control:focus {
+  border: 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.wrapper {
+  background-color: rgb(240, 240, 240);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

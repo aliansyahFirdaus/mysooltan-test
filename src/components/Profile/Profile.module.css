@@ -1,0 +1,41 @@
+.profile {
+  padding: 40px 25px;
+  text-align: center;
+  gap: 30px;
+}
+
+.profile p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(185, 185, 185);
+}
+
+.profile .profile-picture img {
+  width: 120px;
+  border-radius: 50%;
+  border: 7px solid rgb(236, 236, 236);
+}
+
+.profile .username {
+  gap: 10px;
+}
+
+.profile .username h3 {
+  font-size: 27px;
+  margin: 0;
+  color: rgb(97, 97, 97);
+}
+
+.profile p {
+  margin: 0;
+}
+
+.profile .view-profile {
+  border-radius: 30px;
+  width: 80%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid rgb(194, 194, 194);
+  color: rgb(97, 97, 97);
+  margin: auto;
+}

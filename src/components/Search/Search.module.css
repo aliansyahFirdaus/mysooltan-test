@@ -1,0 +1,28 @@
+.search {
+  padding: 0 !important;
+}
+
+.search .hstack {
+  width: 100% !important;
+}
+
+.search img {
+  width: 27px;
+}
+
+.input {
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 50px;
+  align-items: center !important;
+  padding: 0 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.input input {
+  border: 0;
+}
+
+.input .icon {
+  color: rgb(194, 194, 194);
+}

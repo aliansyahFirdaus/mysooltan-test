@@ -1,0 +1,49 @@
+.item {
+  padding: 15px;
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.item .top {
+  justify-content: space-between;
+}
+
+.item .top a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.item .top span {
+  background-color: transparent !important;
+  padding: 5px 8px;
+}
+
+.item .top .public {
+  background-color: rgb(255, 242, 171) !important;
+  color: rgb(102, 102, 102);
+}
+
+.item .top .private {
+  background-color: rgb(171, 238, 255) !important;
+  color: rgb(102, 102, 102);
+}
+
+.item .bottom .language {
+  font-size: 13px;
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 5px;
+}
+
+.item .bottom .language .icon {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(168, 118, 42);
+}
