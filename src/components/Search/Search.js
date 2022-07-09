@@ -1,12 +1,14 @@
 import { Container, Form, InputGroup, Stack } from "react-bootstrap";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "../../store/user-action";
 
 import React, { useState } from "react";
 import styles from "./Search.module.css";
+import { fetchRepoUser } from "../../store/repo-action";
 
 export default function Search() {
   const [keyword, setKeyword] = useState("");
+  const { user } = useSelector((state) => state.userDetail);
   const dispatch = useDispatch();
 
   const typingHandler = (e) => setKeyword(e.target.value);
@@ -15,6 +17,7 @@ export default function Search() {
     e.preventDefault();
     if (!keyword.trim()) return;
     dispatch(fetchUser(keyword));
+    dispatch(fetchRepoUser(user.repos_url))
     setKeyword("");
   };
 

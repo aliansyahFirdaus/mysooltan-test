@@ -8,8 +8,7 @@ import StatProfile from "./StatProfile";
 
 export default function Profile() {
   const { user } = useSelector((state) => state.userDetail);
-
-  console.log(user)
+  
 
   return (
     <Container>
