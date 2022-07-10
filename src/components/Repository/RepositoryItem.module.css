@@ -12,7 +12,7 @@
 
 .item .top .right {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .item .top .right .star span {
@@ -23,7 +23,7 @@
   font-size: 20px;
   text-decoration: none;
   font-weight: 800;
-  width: 70%;
+  width: 55%;
 }
 
 .item .top span {
