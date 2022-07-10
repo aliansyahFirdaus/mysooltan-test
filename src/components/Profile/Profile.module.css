@@ -8,6 +8,7 @@
   font-size: 15px;
   font-weight: 400;
   color: rgb(185, 185, 185);
+
 }
 
 .profile .profile-picture img {
@@ -26,8 +27,9 @@
   color: rgb(97, 97, 97);
 }
 
-.profile p {
-  margin: 0;
+.profile .username p {
+  margin: auto;
+  width: 400px;
 }
 
 .profile .view-profile {
