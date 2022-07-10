@@ -9,6 +9,7 @@ import StatProfile from "./StatProfile";
 export default function Profile() {
   const { user } = useSelector((state) => state.userDetail);
   
+  console.log(user)
 
   return (
     <Container>
@@ -19,7 +20,7 @@ export default function Profile() {
               <img src={user.avatar_url} />
             </div>
             <Stack className={styles.username}>
-              <h3>{user.username}</h3>
+              <h3>{user.name}</h3>
               <p>{user.bio}</p>
             </Stack>
           </Stack>
