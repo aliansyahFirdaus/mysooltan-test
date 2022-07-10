@@ -16,7 +16,7 @@ export default function Repository() {
     dispatch(fetchRepoUser(user.repos_url));
   }, [user]);
 
-  // console.log(repos);
+  console.log(repos);
 
   return (
     <Container>

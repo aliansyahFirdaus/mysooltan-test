@@ -10,10 +10,20 @@
   justify-content: space-between;
 }
 
+.item .top .right {
+  display: flex;
+  gap: 15px;
+}
+
+.item .top .right .star span {
+  font-size: 15px;
+}
+
 .item .top a {
   font-size: 20px;
   text-decoration: none;
   font-weight: 800;
+  width: 70%;
 }
 
 .item .top span {
@@ -29,6 +39,15 @@
 .item .top .private {
   background-color: rgb(171, 238, 255) !important;
   color: rgb(102, 102, 102);
+}
+
+.item .bottom {
+  justify-content: space-between;
+}
+
+.item .bottom .badge {
+  display: flex;
+  gap: 10px;
 }
 
 .item .bottom .language {
